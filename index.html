@@ -1,10 +1,54 @@
-<!DOCTYPE html><html lang="fr"><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CheryTech</title><link rel="stylesheet" href="css/style.css"></head>
-<body>
-<header><h1>CheryTech</h1><nav><a href="#">Accueil</a></nav></header>
-<section class="hero"><h2>La technologie à votre portée</h2>
-<p>Byenvini sou CheryTech.</p>
-<a class="btn" href="https://wa.me/50948218262">WhatsApp</a></section>
-<section><h3>Pwodwi yo</h3><div class="card">Telefòn</div><div class="card">Laptop</div></section>
-<script src="js/script.js"></script></body></html>
+<div class="cards">
+
+<div class="card">
+<img src="assets/phone.jpg">
+<h3>Samsung Galaxy S25</h3>
+<p>RD$45,000</p>
+<button onclick="addToCart('Samsung Galaxy S25',45000)">
+Ajouter au panier
+</button>
+</div>
+
+<div class="card">
+<img src="assets/laptop.jpg">
+<h3>HP Laptop</h3>
+<p>RD$38,500</p>
+<button onclick="addToCart('HP Laptop',38500)">
+Ajouter au panier
+</button>
+</div>
+
+<div class="card">
+<img src="assets/tv.jpg">
+<h3>Smart TV 55"</h3>
+<p>RD$29,900</p>
+<button onclick="addToCart('Smart TV',29900)">
+Ajouter au panier
+</button>
+</div>
+
+<div class="card">
+<img src="assets/fridge.jpg">
+<h3>Réfrigérateur</h3>
+<p>RD$34,500</p>
+<button onclick="addToCart('Réfrigérateur',34500)">
+Ajouter au panier
+</button>
+</div>
+
+</div>
+
+<section id="cart">
+<h2>🛒 Panier</h2>
+
+<div id="cart-items"></div>
+
+<h3>Total : RD$
+<span id="total">0</span>
+</h3>
+
+<button class="btn" onclick="checkout()">
+Commander sur WhatsApp
+</button>
+
+  </section>
