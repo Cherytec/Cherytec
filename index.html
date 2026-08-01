@@ -1,54 +1,105 @@
-<div class="cards">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CheryTech | Technologie & Innovation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-<div class="card">
-<img src="assets/phone.jpg">
-<h3>Samsung Galaxy S25</h3>
-<p>RD$45,000</p>
-<button onclick="addToCart('Samsung Galaxy S25',45000)">
-Ajouter au panier
-</button>
-</div>
+<body>
 
-<div class="card">
-<img src="assets/laptop.jpg">
-<h3>HP Laptop</h3>
-<p>RD$38,500</p>
-<button onclick="addToCart('HP Laptop',38500)">
-Ajouter au panier
-</button>
-</div>
+<header>
+  <div class="logo">
+    <h1>CheryTech</h1>
+    <p>La technologie à votre portée</p>
+  </div>
 
-<div class="card">
-<img src="assets/tv.jpg">
-<h3>Smart TV 55"</h3>
-<p>RD$29,900</p>
-<button onclick="addToCart('Smart TV',29900)">
-Ajouter au panier
-</button>
-</div>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#produits">Produits</a>
+    <a href="#agents">Agents</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-<div class="card">
-<img src="assets/fridge.jpg">
-<h3>Réfrigérateur</h3>
-<p>RD$34,500</p>
-<button onclick="addToCart('Réfrigérateur',34500)">
-Ajouter au panier
-</button>
-</div>
 
-</div>
+<section id="accueil" class="hero">
+  <h2>Bienvenue chez CheryTech</h2>
+  <p>
+    Découvrez nos produits électroniques, nos services et nos opportunités
+    pour développer votre activité avec nous.
+  </p>
 
-<section id="cart">
-<h2>🛒 Panier</h2>
+  <button>Découvrir nos produits</button>
+</section>
 
-<div id="cart-items"></div>
 
-<h3>Total : RD$
-<span id="total">0</span>
-</h3>
+<section id="produits">
+  <h2>Nos Produits</h2>
 
-<button class="btn" onclick="checkout()">
-Commander sur WhatsApp
-</button>
+  <div class="cards">
 
+    <div class="card">
+      <h3>Téléphones</h3>
+      <p>
+        Smartphones et accessoires de qualité pour tous les besoins.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Électronique</h3>
+      <p>
+        Appareils modernes pour la maison et le travail.
+      </p>
+    </div>
+    
+    <div class="card">
+      <section id="agents">
+  <h2>Rejoignez CheryTech</h2>
+
+  <p>
+    Devenez agent CheryTech et gagnez des commissions en présentant
+    nos produits à de nouveaux clients.
+  </p>
+
+  <button>Devenir Agent</button>
+</section>
+
+
+<section id="contact">
+  <h2>Contactez-nous</h2>
+
+  <p>
+    Pour les commandes, informations et partenariats :
+  </p>
+
+  <p>
+    📱 CheryTech
+  </p>
+
+  <p>
+    Innovation - Qualité - Confiance
+  </p>
+</section>
+
+
+<footer>
+  <p>
+    © 2026 CheryTech. Tous droits réservés.
+  </p>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+                          </html>
+      <h3>Accessoires</h3>
+      <p>
+        Chargeurs, écouteurs, câbles et plus encore.
+      </p>
+    </div>
+
+  </div>
   </section>
