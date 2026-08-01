@@ -44,3 +44,49 @@ cartes.forEach(card => {
 
     observer.observe(card);
 });
+let cart = [];
+let total = 0;
+
+function addToCart(name, price){
+
+cart.push({name,price});
+
+total += price;
+
+displayCart();
+
+}
+
+function displayCart(){
+
+const cartItems = document.getElementById("cart-items");
+
+cartItems.innerHTML = "";
+
+cart.forEach(item=>{
+
+cartItems.innerHTML += `
+<p>${item.name} - RD$${item.price}</p>
+`;
+
+});
+
+document.getElementById("total").innerText = total;
+
+}
+
+function checkout(){
+
+let message="Bonjour CheryTech,%0AJe souhaite commander :%0A";
+
+cart.forEach(item=>{
+
+message += "- "+item.name+"%0A";
+
+});
+
+message += "%0ATotal : RD$"+total;
+
+window.open("https://wa.me/1809XXXXXXX?text="+message);
+
+}
